@@ -2,13 +2,10 @@
 
  class News_Model  
  {  
-     /** 
-     * 文章数组. key为文章标题, 值为相应的 
-     * 文章。 
-     */  
+
     private $articles = array  
     (  
-        //文章1  
+        
         'new' => array  
         (  
             'title' => 'New Website' ,  
@@ -34,16 +31,10 @@
     {  
     }  
   
-    /** 
-     * 根据标题获取文章 
-     *  
-     * @param string $articleName 
-     *  
-     * @return array $article 
-     */  
+  
     public function get_article($articleName)  
     {  
-        //从数组中获取文章  
+        
         $article = $this->articles[$articleName];  
       
         return $article;  
